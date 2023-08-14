@@ -6,6 +6,7 @@ USE_CAMERA_STUB := true
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := exynos5
+TARGET_SOC := exynos5422
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -13,9 +14,10 @@ TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-TARGET_BOOTLOADER_BOARD_NAME := k3g
+TARGET_BOOTLOADER_BOARD_NAME := universal5422
 
 #KERNEL
+TARGET_PREBUILT_KERNEL := device/samsung/k3g/kernel #(NOTE: Even if this is declared, kernel built from source is given priority)
 TARGET_KERNEL_CONFIG := exynos5422-k3g_00_defconfig
 TARGET_PREBUILT_DT := device/samsung/k3g/dt
 BOARD_KERNEL_CMDLINE := 
