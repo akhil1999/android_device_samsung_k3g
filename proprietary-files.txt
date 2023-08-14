@@ -1,0 +1,3 @@
+# GPU
+vendor/lib/egl/libGLES_mali.so
+
