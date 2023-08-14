@@ -6,6 +6,7 @@ USE_CAMERA_STUB := true
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := exynos5
+TARGET_SLSI_VARIANT := burgirnt
 TARGET_SOC := exynos5422
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -42,3 +43,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 #Embedded-System Graphics Library Config
 BOARD_EGL_CFG := device/samsung/k3g/config/egl/egl.cfg
+
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    device/samsung/k3g/sepolicy
