@@ -39,3 +39,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 #For power button to confirm selections in recovery.
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+#Embedded-System Graphics Library Config
+BOARD_EGL_CFG := device/samsung/k3g/config/egl/egl.cfg
