@@ -47,3 +47,7 @@ BOARD_EGL_CFG := device/samsung/k3g/config/egl/egl.cfg
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/samsung/k3g/sepolicy
+    
+#Screen
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080   
